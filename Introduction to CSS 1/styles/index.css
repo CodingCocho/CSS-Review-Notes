@@ -1,0 +1,90 @@
+/* CSS stands for Cascading Style Sheets */
+/* CSS describes how HTML elements are to be displayed on 
+screen, paper, or in other media */
+/* CSS saves a lot of work. It can control the layout of multiple web pages all at once */
+/* External stylesheets are stored in CSS files */
+
+/* This is the index.css stylesheet */
+/* Here we contain all the CSS rules we want for our index.html file*/
+
+/* A CSS rule consists of a selector and a declaration block. */
+/* The selector points to the HTML element you want to style. */
+/* Each declaration includes a CSS property name and a value, separated by a colon. */
+/* Multiple CSS declarations are separated with semicolons, and declaration blocks 
+are surrounded by curly braces. */
+
+/* Refer back to index.html we are going to be using our first CSS rule */
+/* Here our selector is the h1 HTML element */
+/* Here we introduce the color property which can take in names of colors,
+hexcodes, and rgb as values*/
+/* We also introduce font-family which changes the font style
+of the h1 elements */
+/* Note: We are using the selector h1 therefore, all <h1> elements in the index.html file will have these
+CSS properties, we have a way to change that with the help of our class and id attributes from
+the HTML introduction */
+h1
+{
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Here will we reference the two <p> elements inside our <div> with class value "container-1" */
+/* To style using the class attribute use the following syntax */
+.text-1
+{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* This is a new CSS property called text-align which allows us to align our text */
+    text-align: center;
+}
+/* To style using the id attribute use the following syntax */
+#text-2
+{
+    color: red;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: right;
+}
+
+/*  An important styling property for <div> tags is the border property*/
+/* Whenever we are styling we can use this property to check how much space our 
+<div> element is taking up on the webpage */
+.container-2
+{
+    /* This property takes 3 values */
+    /* The border width value */
+    /* Note: for this introduction we are using the px unit of measurement for styling */
+    /* The border color */
+    /* Note: color can be a name, hexcode, and rgb */
+    /* The border style */
+    border: 1px red solid;
+}
+
+/* We can also nest selectors with one another to be more specific of which
+class, id, or tag we are referring to */
+/* For this example we are referring to the html elements with the class
+attribute value "list-1" inside the html elements with the class
+attribute value "container-2" */
+.container-2 .list-1
+{
+    /* An important CSS property for <ul> tags is list-style */
+    list-style: none;
+}
+
+.container-2 .list-2
+{
+    /* An important CSS property for <ul> tags is list-style */
+    list-style: lower-alpha;
+}
+
+.container-3
+{
+    border: 5px green dotted;
+}
+
+
+.link-1
+{
+    /* An important CSS property for <a> tags  is text-decoration 
+    with value none to get rid of the underline */
+    text-decoration: none;
+}
