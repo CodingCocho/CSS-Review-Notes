@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Flexbox Review</title>
+</head>
+<body>
+    
+    <!-- Justify-content property, which aligns items horizontally and accepts the following values:
+    flex-start: Items align to the left side of the container.
+    flex-end: Items align to the right side of the container.
+    center: Items align at the center of the container.
+    space-between: Items display with equal spacing between them.
+    space-around: Items display with equal spacing around them. -->
+    
+    <p>display: flex;</p>
+    <p>justify-content: flex-end;</p>
+    <div id="container-1" class="containers">
+        <div class="box">I am a box</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: center;</p>
+    <div id="container-2" class="containers">
+        <div class="box">I am a box</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: space-around;</p>
+    <div id="container-3" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+    
+    <p>display: flex;</p>
+    <p>justify-content: space-between;</p>
+    <div id="container-4" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <!-- Align-items CSS property aligns items vertically and accepts the following values:
+    flex-start: Items align to the top of the container.
+    flex-end: Items align to the bottom of the container.
+    center: Items align at the vertical center of the container.
+    baseline: Items display at the baseline of the container.
+    stretch: Items are stretched to fit the container. -->
+    
+    <p>display: flex;</p>
+    <p>align-items: flex-end;</p>
+    <div id="container-5" class="containers">
+        <div class="box">I am a box</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: center;</p>
+    <p>align-items: center;</p>
+    <div id="container-6" class="containers">
+        <div class="box">I am a box</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: space-around;</p>
+    <p>align-items: flex-end;</p>
+    <div id="container-7" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+    
+    <!-- Flex-direction CSS property defines the direction items are placed in the container, and accepts the following values:
+    row: Items are placed the same as the text direction.
+    row-reverse: Items are placed opposite to the text direction.
+    column: Items are placed top to bottom.
+    column-reverse: Items are placed bottom to top. -->
+    <p>display: flex;</p>
+    <p>flex-direction: row-reverse;</p>
+    <div id="container-8" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>flex-direction: column;</p>
+    <div id="container-9" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: flex-end;</p>
+    <p>flex-direction: row-reverse;</p>
+    <div id="container-10" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: flex-end;</p>
+    <p>flex-direction: column;</p>
+    <div id="container-11" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>justify-content: space-between;</p>
+    <p>flex-direction: column-reverse;</p>
+    <div id="container-12" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>align-items: flex-end;</p>
+    <p>justify-content: center;</p>
+    <p>flex-direction: row-reverse;</p>
+    <div id="container-13" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <!-- We can apply the order property to individual items. By default, items have a value of 0, 
+    but we can use this property to also set it to a positive or negative integer value (-2, -1, 0, 1, 2).    -->
+    <p>display: flex;</p>
+    <p>#iAmBox2 { order: 1; }</p>
+    <p>Make #iAmBox2 node child after all 0's</p>
+    <div id="container-14" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2" id="iAmBox2">I am a box 2</div>
+        <div class="box2">I am a box 3</div>
+    </div>
+
+    <p>display: flex;</p>
+    <p>#iAmBox3 { order: -1; }</p>
+    <p>Make #iAmBox3 node child left of all 0's</p>
+    <div id="container-15" class="containers">
+        <div class="box2">I am a box 1</div>
+        <div class="box2">I am a box 2</div>
+        <div class="box2" id="iAmBox3">I am a box 3</div>
+    </div>
+
+</body>
+</html>
