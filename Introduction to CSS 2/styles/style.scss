@@ -134,6 +134,12 @@ body
     display: flex;
 }
 
+#container-16, #container-17
+{
+    display: flex;
+    align-items: flex-start;
+}
+
 #iAmBox2
 {
     order: 1;
@@ -142,4 +148,56 @@ body
 #iAmBox3
 {
     order: -1;
+}
+
+#iAmBox2-2
+{
+    align-self: flex-end;
+}
+
+#iAmBox1
+{
+    order: 1;
+    align-self: flex-end;
+}
+
+#container-18
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container-19
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#container-20
+{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#container-21
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#container-22
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#container-23
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column-reverse;
 }
