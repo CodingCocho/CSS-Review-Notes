@@ -1,0 +1,73 @@
+.container {
+    border: 6px solid black;
+    display: grid;
+    height: 400px;
+    // width: 400px;
+    // display: inline-grid takes up space of the child elements
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows with fr needs height 
+    // grid-template-columns didn't since a width was defined because of the padding of
+    // the div elements so it has something to base the fraction calculation off of 
+    // grid-template-rows: 1fr 1fr 1fr;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    // row-gap: 20px;
+    // column-gap: 20px;
+    // gap: row-gap column-gap
+    // gap: 20px 20px;
+    // align-items: center;
+    // justify-items: center;
+    // place-items: align-items justify-items
+    // justify-content and align-content applies the grid structure itself
+    // justify-content: space-evenly;
+    // align-content: space-around;
+    // place-content: align-content justify-content
+    // grid-auto-flow determines default grid orientation 
+    // grid-auto-column determines base width of columns
+    // grid-auto-rows determines base height of rows
+
+  }
+  .grid-item {
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .item-1 {
+    background-color: #b4bf35;
+    // grid-column-start: 1;
+    // grid-column-end: span 2;
+    // grid-row-start: 1;
+    // grid-row-end: span 2;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .item-2 {
+    background-color: #b95f21;
+    justify-self: center;
+    align-self: center;
+    place-self: center center;
+  }
+  .item-3 {
+    background-color: #1c4c56;
+  }
+  .item-4 {
+    background-color: #cfb276;
+  }
+  .item-5 {
+    background-color: #6b0803;
+  }
+  .item-6 {
+    background-color: #cfb276;
+  }
+  .item-7 {
+    background-color: #b95f21;
+  }
+  .item-8 {
+    background-color: #01243a;
+  }
+  .item-9 {
+    background-color: #aad041;
+  }
