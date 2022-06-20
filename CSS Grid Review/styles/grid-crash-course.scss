@@ -46,9 +46,11 @@
   }
   .item-2 {
     background-color: #b95f21;
-    justify-self: center;
-    align-self: center;
-    place-self: center center;
+    // Equal to align-items and justify-items
+    // justify-self: center;
+    // align-self: center;
+    // place-self: align-self justify-self 
+    // place-self: center center;
   }
   .item-3 {
     background-color: #1c4c56;
