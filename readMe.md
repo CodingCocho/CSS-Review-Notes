@@ -1,0 +1,1 @@
+This contains all my notes for CSS. I also have SASS variable stylesheets that can be imported with Tailwind CSS.
